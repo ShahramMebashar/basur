@@ -1,0 +1,118 @@
+.btn, a.btn, button.btn
+  outline: none
+  border: 1px solid transparent
+  user-select: none
+  padding: 7px 15px
+  background-color: $border-color
+  display: inline-block
+  color: $font-color
+  border-radius: 2px
+  text-align: center
+  transition:  $base-transition
+  line-height: $font-line-height
+  &:hover 
+    cursor: pointer
+    background-color: $border-color
+
+  &--primary 
+    background-color: $primary-color
+    color: #fff
+    &:hover, &:focus, &:focus-within
+      background-color: lighten($primary-color, 6%)
+      color: #fff
+  
+    &:active 
+      background-color: darken($primary-color, 6%)
+  
+    
+
+  &--secondary 
+    background-color: $secondary-color
+    color: #fff
+    &:hover, &:focus, &:focus-within
+      background-color: lighten($secondary-color, 6%)
+      color: #fff
+  
+    &:active 
+      background-color: darken($secondary-color, 6%)
+  
+
+  &--success 
+    background-color: $color--success
+    color: #fff
+    &:hover, &:focus, &:focus-within
+      background-color: lighten($color--success, 6%)
+      color: #fff
+  
+    &:active 
+      background-color: darken($color--success, 6%)
+  
+
+  &--error 
+    background-color: $color--error
+    color: #fff
+    &:hover, &:focus, &:focus-within
+      background-color: lighten($color--error, 6%)
+      color: #fff
+  
+    &:active 
+      background-color: darken($color--error, 6%)
+  
+
+  &--warning 
+    background-color: $color--warning
+    color: #fff
+    &:hover, &:focus, &:focus-within
+      background-color: lighten($color--warning, 6%)
+      color: #fff
+  
+    &:active 
+      background-color: darken($color--warning, 6%)
+  
+
+  &--info 
+    background-color: $color--info
+    color: #fff
+    &:hover, &:focus, &:focus-within
+      background-color: lighten($color--info, 6%)
+      color: #fff
+  
+    &:active 
+      background-color: darken($color--info, 6%)
+  
+
+  
+
+.btn:disabled,.btn.btn--disabled 
+  background-color: #f0f0f0 !important
+  color: #aaa !important
+  cursor: not-allowed
+  pointer-events: none
+
+a.btn
+  text-decoration: none
+
+  
+.btn-group
+
+  display: flex
+  .btn 
+    background-color: inherit
+    border: 1px solid $border-color
+    border-radius: 0
+    flex: 1
+
+  .btn + .btn 
+    border-left: 0
+
+  .btn:first-child 
+    border-top-left-radius: 2px
+    border-bottom-left-radius: 2px
+
+  .btn:last-child 
+    border-top-right-radius: 2px
+    border-bottom-right-radius: 2px
+  
+
+  
+  

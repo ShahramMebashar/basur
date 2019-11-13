@@ -1,0 +1,34 @@
+.h-divider
+  position: relative
+  width: 100%
+  height: 1px
+  background-color: $border-color
+  margin-top: 1rem
+  margin-bottom: 1rem
+  &__placeholder 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: $background-color
+    padding: .2rem 1.5rem
+  
+  .placeholder--left 
+    left: 0 !important
+    transform: translate(0%, -50%)
+    padding-left: 0
+  
+  .placeholder--right 
+    right: 0 !important
+    transform: translate(0%, -50%)
+    padding-right: 0
+  
+
+.v-divider 
+  position: relative
+  width: 1px
+  height: 100%
+  background-color: $border-color
+  margin-left: 1rem
+  margin-right: 1rem
+

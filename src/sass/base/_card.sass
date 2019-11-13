@@ -1,0 +1,61 @@
+.card 
+  border: 1px solid $border-color
+  position: relative
+  &__image 
+    position: relative
+    overflow: hidden
+    &--responsive 
+      position: relative
+      height: 0
+      padding-bottom: 56.25%
+       background-color: #bdc3c7
+    
+
+    img 
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+      height: 100%
+      object-fit: cover
+    
+  
+  &__body 
+    padding: 1rem
+    word-break: break-all
+    position: relative
+    & > * 
+      margin-top: 0
+      margin-bottom: 0
+    
+    & > * + * 
+      margin-top: 1rem
+    
+  
+  &__rating 
+    .star 
+      display: inline-block
+    
+  
+  &__footer 
+    //border-top: 1px solid $border-color
+  
+  .footer--border 
+    border-top: 1px solid $border-color
+  
+  
+  //Modifiers
+  &--shadow 
+    box-shadow: 0 3px 6px -2px rgba(100,100,100,0.1)
+  
+
+.card.card--dark 
+  background-color: $color--dark
+  color: #fff
+  border-color: #353b48
+  .footer--border 
+    border-top: 1px solid $border-color
+  
+
+
