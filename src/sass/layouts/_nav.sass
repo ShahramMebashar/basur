@@ -1,0 +1,31 @@
+.nav__widget
+    display: flex
+
+.searchbar
+    margin-right: 32px
+    flex: 1 1 auto
+.search-control
+    position: relative
+.search-input
+    height: 40px
+    display: inline-block
+    border-radius: 25px
+    width: 100%
+
+.btn--search
+    width: 48px
+    height: 48px
+    border-radius: 50% !important
+    padding: 0 !important
+    position: absolute
+    top: 50%
+    margin-top: -24px
+    right: 0
+    display: flex !important
+    justify-content: center
+    align-items: center
+    svg path
+        transition: .3s ease
+    &:hover, &:focus-within
+        svg path
+            fill: #fff

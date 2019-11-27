@@ -1,0 +1,250 @@
+.top-nav
+    display: none
+
+    .nav-logo
+.contacts
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    font-size: 14px
+    user-select: none
+    .contact-item
+        display: flex
+        align-items: flex-start
+        transition: all .3s ease
+        &:not(:nth-child(2))
+            .contact-icon path
+                fill: $primary-color
+        &:not(:last-child)
+            margin-right: 32px
+        &:not(:nth-child(2)):hover
+            .contact-label
+                color: $primary-color
+        &:nth-child(2)
+            .contact-icon path:not(:nth-child(3))
+                fill: #4AC959
+        &:nth-child(2):hover
+            .contact-label
+                color: #4AC959
+
+    .contact-icon
+        margin-right: 16px
+        font-size: 32px
+        width: 32px
+        height: 32px
+        color: $secondary-color
+        transition: all .3s ease
+        svg path
+            transition: fill .3s ease
+    .contact-label
+        font-weight: 600
+        text-transform: uppercase
+        margin-bottom: 0
+        color: #111
+    .contact-text
+        color: $secondary-color
+
+.main-nav
+    background-color: #fff
+    position: relative
+    border-top: 1px solid $border-color
+    border-bottom: 1px solid $border-color
+.nav
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: center
+    height: 72px
+    .nav-left
+        margin-left: auto
+    .nav-logo
+        max-width: 96px
+        flex: 1
+        vertical-align: middle
+    .nav-humberger
+        width: 32px
+        padding: 4px
+        margin-left: auto
+        cursor: pointer
+        user-select: none
+        &.is--active
+            .humberger.humberger-2
+                opacity: 0
+            .humberger.humberger-1
+                transform: translateY(6px) rotate(45deg)
+            .humberger.humberger-3
+                transform: translateY(-6px) rotate(-45deg)
+
+        .humberger
+            display: block
+            width: 100%
+            height: 2px
+            border-radius: 1.5px
+            background-color: #111
+            transition: .3s ease
+            & + .humberger
+                margin-top: 4px
+
+    .navbar
+        position: fixed
+        top: 72px
+        left: 0
+        width: 100%
+        height: 100%
+        background: #fff
+        z-index: 9999
+        transform: translate(-100%)
+        transition: transform .3s ease
+        .navbar__item
+            text-transform: uppercase
+            .nav-dropdown,.nav-mega
+                display: none
+            .icon
+                transition: transform .3s ease
+                transform-origin: center
+
+        &.is--active
+            display: block
+            transform: translate(0%)
+        .navbar__item.is-active
+            .nav-dropdown
+                display: block
+            .nav-mega
+                display: flex
+            .icon
+                transform: rotate(180deg) translateX(-4px)
+
+.navbar, .nav-dropdown
+    display: block
+    list-style-type: none
+    margin: 0
+    padding: 16px 24px
+.navbar__item
+    font-weight: 500
+    position: relative
+    & > a:hover
+        color: $primary-color
+
+.navbar__item,.nav-dropdown-item
+
+.navbar__link,.nav-dropdown-link
+    text-decoration: none
+    display: block
+    padding: 1.5rem 0
+    color: #212121
+.navbar__item:not(:first-child), .nav-dropdown-item
+    border-top: 1px solid #f0f0f0
+.nav-searchbar
+    display: none
+    &:hover
+        color: $primary-color
+        cursor: pointer
+
+@media screen and (min-width: 960px)
+    .top-nav
+        padding-top: 40px
+        padding-bottom: 40px
+        display: flex
+        align-items: center
+        .nav-right
+            margin-left: auto
+        .nav-left
+            margin-margin: auto
+        .social-icons
+            .icon
+                &:hover
+                    cursor: pointer
+        img
+            vertical-align: middle
+    .nav
+        .navbar
+            position: static
+            transform: translate(0%)
+            display: flex
+            margin-left: auto
+            flex: 1 1 auto
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: flex-start
+            align-items: center
+            background: none
+            padding: 0
+            .navbar__item
+                padding-left: 8px
+                padding-right: 8px
+            .navbar__item,.nav-dropdown-item
+                border: none
+
+            .navbar__link
+                padding: 2rem 1.5rem
+            .navbar__link:first-child
+                margin-left: -1.5rem
+
+        .nav-humberger
+            display: none
+
+        .nav-dropdown
+            display: none
+            .nav-dropdown-link
+                display: block
+                border-bottom: 1px solid transparent
+
+                transition: .3s ease
+                padding-top: 24px
+                padding-bottom: 24px
+                font-size: 14px
+                text-transform: initial
+                &:hover
+                    color: $primary-color
+                    border-color: $primary-color
+
+        .navbar__item.is-active
+            .nav-dropdown
+                display: block
+                position: absolute
+                top: 100%
+                left: 0
+                background: #fff
+                width: 300px
+                box-shadow: 0 2px 3px rgba(0,0,0,0.03), 0 8px 24px rgba(0,0,0,0.06)
+            .nav-mega
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                position: absolute
+                justify-content: flex-start
+                top: 100%
+                left: 0
+                background: #fff
+                width: 960px
+                box-shadow: 0 2px 3px rgba(0,0,0,0.03), 0 8px 24px rgba(0,0,0,0.06)
+                padding: 16px 24px
+                min-height: 400px
+                &__item
+                    flex: 0 0 25%
+                    padding: 16px 24px
+                    //border: 1px solid $border-color
+                .nav-mega__link
+                    display: block
+                .mega__title
+                    display: block
+                    font-size: 16px
+                    font-weight: 600
+                    text-transform: uppercase
+                    border-left: 4px solid $secondary-color
+                    padding-left: 8px
+                    margin-bottom: 0
+                .mega__thumbnail
+                    margin-top: 16px
+                    margin-bottom: 16px
+                .mega__thumbnail img
+                    border-radius: 5px
+                    max-width: 100%
+                .nav__sub-item
+                    list-style: none
+                    padding: 0
+                    font-weight: 300
+                    color: #666
+
+    .nav-searchbar
+        display: block

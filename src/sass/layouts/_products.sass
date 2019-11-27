@@ -1,0 +1,78 @@
+.products
+    margin-top: 64px
+    //lost-utility: edit
+    &__grid
+        //background: #f6f6f6
+    &__sidebar
+        border-right: 1px solid $border-color
+        .list
+            .action-list
+                &__item
+                    display: block
+                    &:last-child
+                        .action-list__action
+                            border-bottom: none
+                    &.action--active
+                        .action-list__action
+                            border-right-color: $primary-color
+                            background: #fafafa
+
+                &__action
+                    color: $font-color
+                    border-bottom: 1px solid $border-color
+                    border-right: 4px solid transparent
+                    display: block
+                    padding: 24px 0 24px 16px
+    .product
+
+        width: 100%
+        &__thumbnail
+            display: block
+            overflow: hidden
+            img
+                transition: transform .3s ease
+            &:hover
+                img
+                    transform: scale(1.2)
+        &__info
+            margin-top: 12px
+            display: flex
+            align-items: center
+        &__actions
+            button
+                padding: 0
+                border: none
+                background: none
+            button + button
+                margin-left: 16px
+            .icon
+                color: $secondary-color
+        &__link
+            flex: 1 1 auto
+            color: $font-color--heading
+        &__title
+            margin-top: 0
+            margin-bottom: 0
+            font-size: 16px
+            font-weight: 700
+            line-height: 1.2
+
+@media screen and (min-width: 760px)
+    .products
+        margin-top: 64px
+        lost-utility: clearfix
+        lost-flex-container: row
+        align-items: flex-start
+
+        &__grid
+            lost-column: 3/4 flex
+            //background: #f6f6f6
+        &__sidebar
+            lost-column: 1/4 flex
+        .product
+            lost-waffle: 1/2
+
+@media screen and (min-width: 960px)
+    .products
+        .product
+            lost-waffle: 1/3

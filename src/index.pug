@@ -1,10 +1,234 @@
 extends ./layouts/main.pug
+block head
+    link(rel="stylesheet", href="./css/swiper.min.css")
 block body
-    .outer
-        .inner
-            h1 The quick brown fox jumps over the lazy dog
-            h2.h1 The quick brown fox jumps over the lazy dog
-            h3 The quick brown fox jumps over the lazy dog
-            h4 The quick brown fox jumps over the lazy dog
-            h5 The quick brown fox jumps over the lazy dog
-            h6 The quick brown fox jumps over the lazy dog
+    header.header
+        // Slider main container
+        .swiper-container
+            .parallax-bg(style="background-image:url(https://image.freepik.com/free-photo/office-school-supplies-blue-background_23-2148200079.jpg)" data-swiper-parallax="-23%")
+            // Additional required wrapper
+            .swiper-wrapper
+                // Slides
+                .swiper-slide
+                    img.slider__bg(src="https://image.freepik.com/free-photo/office-school-supplies-blue-background_23-2148200079.jpg")
+                    .outer
+                        .inner
+                            .grid
+                                .grid__item.grid--6
+                                    img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="")
+                                .grid__item.grid--6    
+                                    h3(data-swiper-parallax="-300" data-swiper-parallax-opacity="0") Title of slideasdasdasdas
+                                    p some description
+                                    .btn.btn--primary Sldie action
+                .swiper-slide
+                    img.slider__bg(src="https://image.freepik.com/free-photo/top-view-yellow-school-supplies_23-2148200098.jpg")
+                    .outer
+                        .inner
+                            .grid
+                                .grid__item.grid--6
+                                    img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="")
+                                .grid__item.grid--6    
+                                    h3 Title of slide
+                                    p some description
+                                    .btn.btn--secondary Sldie action
+
+                .swiper-slide
+                    img.slider__bg(src="")
+                    .outer
+                        .inner
+                            .grid
+                                .grid__item.grid--6
+                                    img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="")
+                                .grid__item.grid--6    
+                                    h3 Title of slide
+                                    p some description
+                                    .btn.btn--primary Sldie action
+                
+            // If we need pagination
+            .swiper-pagination
+            // If we need navigation buttons
+            .swiper-button-prev
+            .swiper-button-next
+
+    section.section.feature-products
+        .outer
+            .inner
+                h2.section__headline Feature Products
+                p.section__subheadline We help businesses to stand out well and thrive using the most imaginative and impactful ways.
+                
+                .products
+                    .products__sidebar
+                        .widget.widget--categories
+                            h4.widget__headline Product Categories
+                            .widget__content 
+                                ul.list.action-list
+                                    li.action-list__item.action--active
+                                        a.action-list__action(href="#" data-link="") Logo
+                                    li.action-list__item
+                                        a.action-list__action(href="#" data-link="") Business Card
+                                    li.action-list__item
+                                        a.action-list__action(href="#" data-link="") Bruchore
+                                    li.action-list__item
+                                        a.action-list__action(href="#" data-link="") Restaurant
+                                    li.action-list__item
+                                        a.action-list__action(href="#" data-link="") All Products
+
+                    .products__grid
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img(src="https://demo.harutheme.com/pangja/wp-content/uploads/2019/01/calendar-1-300x300.jpg", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                                    
+
+        
+        
+    section.section    
+        .outer
+            .inner
+                h1 The quick brown fox jumps over the lazy dog
+                h2.h1 The quick brown fox jumps over the lazy dog
+                h3 The quick brown fox jumps over the lazy dog
+                h4 The quick brown fox jumps over the lazy dog
+                h5 The quick brown fox jumps over the lazy dog
+                h6 The quick brown fox jumps over the lazy dog
+                p Paragraph: This is version 1 of Archetype and we'd love your feedback and suggestions on how we can improve it to make it even more useful. Please use the feedback
+
+                button.btn Shop now
+                button.btn.btn--primary Shop now
+                button.btn.btn--primary.btn--outline Shop now
+                button.btn.btn--secondary Shop now
+block scripts
+    script(src="./js/swiper.min.js")
+    script.
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: true,
+            speed: 600,
+            parallex: true,
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+
+        })            
