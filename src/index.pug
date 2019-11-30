@@ -5,45 +5,42 @@ block body
     header.header
         // Slider main container
         .swiper-container
-            .parallax-bg(style="background-image:url(https://image.freepik.com/free-photo/office-school-supplies-blue-background_23-2148200079.jpg)" data-swiper-parallax="-23%")
+            .parallax-bg(style="background-image:url(/assets/imgs/bg.jpg)" data-swiper-parallax="-23%")
             // Additional required wrapper
             .swiper-wrapper
                 // Slides
                 .swiper-slide
-                    img.slider__bg(src="https://image.freepik.com/free-photo/office-school-supplies-blue-background_23-2148200079.jpg")
                     .outer
                         .inner
                             .grid
-                                .grid__item.grid--6
-                                    img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="")
-                                .grid__item.grid--6    
-                                    h3(data-swiper-parallax="-300" data-swiper-parallax-opacity="0") Title of slideasdasdasdas
-                                    p some description
-                                    .btn.btn--primary Sldie action
+                                .grid__item.grid--7.slider__detail     
+                                    h3.slider__title(data-swiper-parallax="-300" data-swiper-parallax-opacity="0") WE’LL HELP YOU LEAVE A PROFESSIONAL IMPRESSION
+                                    p.slider__description(data-swiper-parallax="-500" data-swiper-parallax-opacity="0") Design, print, signage, delivery – we make it a seamless process for you.
+                                    .btn.btn--outline(data-swiper-parallax="-600" data-swiper-parallax-opacity="0") Sldie action
+                                .grid__item.grid--5
+                                    img.slider__img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="", data-swiper-parallax="-600" data-swiper-parallax-opacity="0")
                 .swiper-slide
-                    img.slider__bg(src="https://image.freepik.com/free-photo/top-view-yellow-school-supplies_23-2148200098.jpg")
                     .outer
                         .inner
                             .grid
-                                .grid__item.grid--6
-                                    img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="")
-                                .grid__item.grid--6    
-                                    h3 Title of slide
-                                    p some description
-                                    .btn.btn--secondary Sldie action
+                                .grid__item.grid--7.slider__detail     
+                                    h3.slider__title(data-swiper-parallax="-300" data-swiper-parallax-opacity="0") WE’LL HELP YOU LEAVE A PROFESSIONAL IMPRESSION
+                                    p.slider__description(data-swiper-parallax="-500" data-swiper-parallax-opacity="0") Design, print, signage, delivery – we make it a seamless process for you.
+                                    .btn.btn--outline(data-swiper-parallax="-600" data-swiper-parallax-opacity="0") Sldie action
+                                .grid__item.grid--5
+                                    img.slider__img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="", data-swiper-parallax="-600" data-swiper-parallax-opacity="0")
+                .swiper-slide
+                    .outer
+                        .inner
+                            .grid
+                                .grid__item.grid--7.slider__detail     
+                                    h3.slider__title(data-swiper-parallax="-300" data-swiper-parallax-opacity="0") WE’LL HELP YOU LEAVE A PROFESSIONAL IMPRESSION
+                                    p.slider__description(data-swiper-parallax="-500" data-swiper-parallax-opacity="0") Design, print, signage, delivery – we make it a seamless process for you.
+                                    .btn.btn--outline(data-swiper-parallax="-600" data-swiper-parallax-opacity="0") Sldie action
+                                .grid__item.grid--5
+                                    img.slider__img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="", data-swiper-parallax="-600" data-swiper-parallax-opacity="0")
 
-                .swiper-slide
-                    img.slider__bg(src="")
-                    .outer
-                        .inner
-                            .grid
-                                .grid__item.grid--6
-                                    img(src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg", alt="")
-                                .grid__item.grid--6    
-                                    h3 Title of slide
-                                    p some description
-                                    .btn.btn--primary Sldie action
-                
+
             // If we need pagination
             .swiper-pagination
             // If we need navigation buttons
@@ -218,8 +215,12 @@ block scripts
             direction: 'horizontal',
             loop: true,
             autoplay: true,
-            speed: 600,
-            parallex: true,
+            speed: 800,
+            parallax: true,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
             // If we need pagination
             pagination: {
             el: '.swiper-pagination',
@@ -230,5 +231,9 @@ block scripts
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
             },
+        
+        })
 
-        })            
+        mySwiper.on('slideChange', function () {
+            console.log('slides changed');
+        });            

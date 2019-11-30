@@ -6,14 +6,9 @@
     position: relative
     padding-top: 72px
     padding-bottom: 72px
-    .slider__bg
-        position: absolute
-        left: 0
-        top: 0
-        width: 100%
-        height: 100%
-        object-fit: cover
-        z-index: -1
+    .grid
+        lost-flex-container: row
+        align-items: center
 .swiper-button-prev, .swiper-button-next
     background: $secondary-color
     padding: 16px
@@ -25,9 +20,30 @@
 .swiper-pagination-bullet-active
     background: $primary-color
 
-//@media screen and (min-width: 767px)
-
-@media screen and (min-width: 960px)  
+.slider__detail
+    background: $primary-color
+    transform: translateX(100px)
+    box-sizing: border-box
+    padding: 2rem
+    z-index: 5
+.slider__title
+    color: #fff
+    text-transform: uppercase
+.slider__description
+    font-size: 16px
+    color: #fff
+.parallax-bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 130%
+    height: 100%
+    // -webkit-background-size: cover
+    // background-size: cover
+    background-position: center
+.slider__img
+    box-shadow: 0 2px 3px rgba(0,0,0,0.03), 0 08px 24px rgba(0,0,0,0.06)
+@media screen and (min-width: 960px)
     .swiper-container
         &:hover
             .swiper-button-prev, .swiper-button-next
@@ -42,3 +58,8 @@
                 transform: scale(1.5)
         &::after
             font-size: 16px
+    .slider__title
+        font-size: 3.90625rem
+        line-height: 5.6rem
+    .slider__description
+        font-size: 18px

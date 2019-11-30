@@ -184,48 +184,48 @@
     <header class="header">
       <!-- Slider main container-->
       <div class="swiper-container">
-        <div class="parallax-bg" style="background-image:url(https://image.freepik.com/free-photo/office-school-supplies-blue-background_23-2148200079.jpg)" data-swiper-parallax="-23%"></div>
+        <div class="parallax-bg" style="background-image:url(/assets/imgs/bg.jpg)" data-swiper-parallax="-23%"></div>
         <!-- Additional required wrapper-->
         <div class="swiper-wrapper">
           <!-- Slides-->
-          <div class="swiper-slide"><img class="slider__bg" src="https://image.freepik.com/free-photo/office-school-supplies-blue-background_23-2148200079.jpg"/>
+          <div class="swiper-slide">
             <div class="outer">
               <div class="inner">
                 <div class="grid">
-                  <div class="grid__item grid--6"><img src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg" alt=""/></div>
-                  <div class="grid__item grid--6">   
-                    <h3 data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Title of slideasdasdasdas</h3>
-                    <p>some description</p>
-                    <div class="btn btn--primary">Sldie action</div>
+                  <div class="grid__item grid--7 slider__detail">    
+                    <h3 class="slider__title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">WE’LL HELP YOU LEAVE A PROFESSIONAL IMPRESSION</h3>
+                    <p class="slider__description" data-swiper-parallax="-500" data-swiper-parallax-opacity="0">Design, print, signage, delivery – we make it a seamless process for you.</p>
+                    <div class="btn btn--outline" data-swiper-parallax="-600" data-swiper-parallax-opacity="0">Sldie action</div>
                   </div>
+                  <div class="grid__item grid--5"><img class="slider__img" src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg" alt="" data-swiper-parallax="-600" data-swiper-parallax-opacity="0"/></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide"><img class="slider__bg" src="https://image.freepik.com/free-photo/top-view-yellow-school-supplies_23-2148200098.jpg"/>
+          <div class="swiper-slide">
             <div class="outer">
               <div class="inner">
                 <div class="grid">
-                  <div class="grid__item grid--6"><img src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg" alt=""/></div>
-                  <div class="grid__item grid--6">   
-                    <h3>Title of slide</h3>
-                    <p>some description</p>
-                    <div class="btn btn--secondary">Sldie action</div>
+                  <div class="grid__item grid--7 slider__detail">    
+                    <h3 class="slider__title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">WE’LL HELP YOU LEAVE A PROFESSIONAL IMPRESSION</h3>
+                    <p class="slider__description" data-swiper-parallax="-500" data-swiper-parallax-opacity="0">Design, print, signage, delivery – we make it a seamless process for you.</p>
+                    <div class="btn btn--outline" data-swiper-parallax="-600" data-swiper-parallax-opacity="0">Sldie action</div>
                   </div>
+                  <div class="grid__item grid--5"><img class="slider__img" src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg" alt="" data-swiper-parallax="-600" data-swiper-parallax-opacity="0"/></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide"><img class="slider__bg" src=""/>
+          <div class="swiper-slide">
             <div class="outer">
               <div class="inner">
                 <div class="grid">
-                  <div class="grid__item grid--6"><img src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg" alt=""/></div>
-                  <div class="grid__item grid--6">   
-                    <h3>Title of slide</h3>
-                    <p>some description</p>
-                    <div class="btn btn--primary">Sldie action</div>
+                  <div class="grid__item grid--7 slider__detail">    
+                    <h3 class="slider__title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">WE’LL HELP YOU LEAVE A PROFESSIONAL IMPRESSION</h3>
+                    <p class="slider__description" data-swiper-parallax="-500" data-swiper-parallax-opacity="0">Design, print, signage, delivery – we make it a seamless process for you.</p>
+                    <div class="btn btn--outline" data-swiper-parallax="-600" data-swiper-parallax-opacity="0">Sldie action</div>
                   </div>
+                  <div class="grid__item grid--5"><img class="slider__img" src="https://image.freepik.com/free-vector/set-printing-material-designs-mockup_53876-62887.jpg" alt="" data-swiper-parallax="-600" data-swiper-parallax-opacity="0"/></div>
                 </div>
               </div>
             </div>
@@ -381,8 +381,12 @@
           direction: 'horizontal',
           loop: true,
           autoplay: true,
-          speed: 600,
-          parallex: true,
+          speed: 800,
+          parallax: true,
+          effect: 'fade',
+          fadeEffect: {
+              crossFade: true
+          },
           // If we need pagination
           pagination: {
           el: '.swiper-pagination',
@@ -394,7 +398,11 @@
           prevEl: '.swiper-button-prev',
           },
       
-      })            
+      })
+      
+      mySwiper.on('slideChange', function () {
+          console.log('slides changed');
+      });            
     </script>
   </body>
 </html>
