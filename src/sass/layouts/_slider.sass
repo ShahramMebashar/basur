@@ -9,6 +9,8 @@
     .grid
         lost-flex-container: row
         align-items: center
+    .btn--outline
+        color: #fff
 .swiper-button-prev, .swiper-button-next
     background: $secondary-color
     padding: 16px
@@ -21,16 +23,17 @@
     background: $primary-color
 
 .slider__detail
-    background: $primary-color
-    transform: translateX(100px)
+    background: rgba($primary-color, 0.9)
     box-sizing: border-box
     padding: 2rem
     z-index: 5
 .slider__title
     color: #fff
     text-transform: uppercase
+    font-size: 2.5rem
+    line-height: 2.8rem
 .slider__description
-    font-size: 16px
+    font-size: 14px
     color: #fff
 .parallax-bg
     position: absolute
@@ -42,8 +45,15 @@
     // background-size: cover
     background-position: center
 .slider__img
-    box-shadow: 0 2px 3px rgba(0,0,0,0.03), 0 08px 24px rgba(0,0,0,0.06)
-@media screen and (min-width: 960px)
+    display: none
+@media screen and (min-width: $br--t)
+    .slider__img
+        display: block
+        box-shadow: 0 2px 3px rgba(0,0,0,0.03), 0 12px 24px rgba(0,0,0,0.16)
+
+@media screen and (min-width: $br--d)
+    .slider__detail
+        transform: translateX(100px)
     .swiper-container
         &:hover
             .swiper-button-prev, .swiper-button-next
@@ -62,4 +72,4 @@
         font-size: 3.90625rem
         line-height: 5.6rem
     .slider__description
-        font-size: 18px
+        font-size: 16px

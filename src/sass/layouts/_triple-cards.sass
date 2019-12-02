@@ -1,0 +1,17 @@
+.triple-cards
+    text-align: center
+    .card
+        padding: 16px
+        margin-bottom: 32px
+        &-headline
+            margin-top: 16px
+            margin-bottom: 16px
+
+@media only screen and (min-width: $br--d)
+    .triple-cards
+        display: flex
+        justify-content: space-around
+        .card
+            flex: 0 0 341px
+            margin-bottom: 0
+            &-headline

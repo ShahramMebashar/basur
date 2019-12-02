@@ -8,3 +8,21 @@
         text-align: center
         max-width: 600px
         margin: auto auto
+    &.services
+        padding-top: 0
+        background: #f6f6f6
+        .description
+            padding: 24px 24px 0 24px
+
+@media screen and (min-width: $br--d)
+    .section.services
+        display: flex
+        justify-content: row
+        align-items: center
+        padding: 0
+        .media
+            flex: 0 0 auto
+        .description
+            max-width: 960px
+            margin-right: auto
+            padding-left: 72px

@@ -4,7 +4,6 @@
     &__grid
         //background: #f6f6f6
     &__sidebar
-        border-right: 1px solid $border-color
         .list
             .action-list
                 &__item
@@ -23,14 +22,28 @@
                     border-right: 4px solid transparent
                     display: block
                     padding: 24px 0 24px 16px
-    .product
 
+    .widget__dropdown
         width: 100%
+        border: 1px solid $border-color
+        padding: 8px 16px
+        background: #fff
+        outline: none
+        margin-bottom: 24px
+
+    .product
+        width: 100%
+        margin-bottom: 24px
+
         &__thumbnail
             display: block
             overflow: hidden
+            border: 1px solid $border-color
+
             img
                 transition: transform .3s ease
+                width: 100%
+
             &:hover
                 img
                     transform: scale(1.2)
@@ -57,7 +70,7 @@
             font-weight: 700
             line-height: 1.2
 
-@media screen and (min-width: 760px)
+@media screen and (min-width: $br--t)
     .products
         margin-top: 64px
         lost-utility: clearfix
@@ -65,14 +78,22 @@
         align-items: flex-start
 
         &__grid
+            lost-column: 1 flex
+            //background: #f6f6f6
+        &__sidebar
+            lost-column: 1 flex
+        .product
+            lost-waffle: 1/2
+    .widget__content
+        margin-bottom: 0
+
+@media screen and (min-width: $br--d)
+    .products
+        &__grid
             lost-column: 3/4 flex
             //background: #f6f6f6
         &__sidebar
             lost-column: 1/4 flex
-        .product
-            lost-waffle: 1/2
-
-@media screen and (min-width: 960px)
-    .products
+            border-right: 1px solid $border-color
         .product
             lost-waffle: 1/3
