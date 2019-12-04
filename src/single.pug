@@ -1,0 +1,126 @@
+extends ./layouts/main.pug
+block head
+    link(rel="stylesheet", href="./css/swiper.min.css")
+block body
+    header.header.single__page
+        .outer
+            .outer
+                ol.breadcrumb(vocab='https://schema.org/', typeof='BreadcrumbList')
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books')
+                            span(property='name') Home
+                        meta(property='position', content='1')
+                    |   ›
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books/sciencefiction')
+                            span(property='name') Promotions
+                        meta(property='position', content='2')
+                    |   ›
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books/sciencefiction/awardwinners')
+                            span(property='name') Business card
+                        meta(property='position', content='3')
+    main.main-content
+        .outer
+            .inner
+                article.single-product
+                    .grid-6
+                        .product__thumbnail
+                            img(src="/assets/imgs/medals.png" alt="notebook" title="notebooks")
+                    .grid-6
+                        .product__details
+                            .product__name
+                                h1.h5 Notebooks
+                            .product__meta
+                                strong Product code 
+                                span.meta__code BA-1065
+
+                            .product__description
+                                p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            .product__actions
+                                h4.h6.title Buy now
+                                a.btn.btn--primary.btn--whatsapp(href="whatsapp.com") 
+                                    span.icon.icon--small.icon-whatsapp 
+                                    | With Whatsapp
+                                a.btn(href="mailto:info@basuragency.com?subject={url}")
+                                    span.icon.icon--small.icon-mail    
+                                    | With E-Mail
+                            .h-divider
+                            .product__socials
+                                strong Share: 
+                                a.social-link(href="/facebook") 
+                                    span.icon.icon--small.icon-facebook-official  
+                                a.social-link(href="/instagram") 
+                                    span.icon.icon--small.icon-twitter  
+                                a.social-link(href="/instagram") 
+                                    span.icon.icon--small.icon-linkedin-squared  
+
+    section.section.recomended-products
+        .outer
+            .inner
+                h3.h4 You may also like this
+                .recomend-grid.products
+                    .grid-3.grid-2--m
+                        .product__card
+                            .card-header
+                                a(href="/")
+                                    img(src="/assets/imgs/medals.png" alt="notebook" title="notebooks")
+                            .card-footer
+                                .product__info
+                                    a.product__link(href="#")
+                                        h3.product__title Calendar
+                                    .product__actions
+                                        button
+                                            span.icon.icon--small.icon-facebook-official 
+                                        button      
+                                            span.icon.icon--small.icon-linkedin-squared   
+                                        button
+                                            span.icon.icon--small.icon-twitter     
+                    .grid-3.grid-2--m
+                        .product__card
+                            .card-header
+                                a(href="/")
+                                    img(src="/assets/imgs/medals.png" alt="notebook" title="notebooks")
+                            .card-footer
+                                .product__info
+                                    a.product__link(href="#")
+                                        h3.product__title Calendar
+                                    .product__actions
+                                        button
+                                            span.icon.icon--small.icon-facebook-official 
+                                        button      
+                                            span.icon.icon--small.icon-linkedin-squared   
+                                        button
+                                            span.icon.icon--small.icon-twitter     
+                    .grid-3.grid-2--m
+                        .product__card
+                            .card-header
+                                a(href="/")
+                                    img(src="/assets/imgs/medals.png" alt="notebook" title="notebooks")
+                            .card-footer
+                                .product__info
+                                    a.product__link(href="#")
+                                        h3.product__title Calendar
+                                    .product__actions
+                                        button
+                                            span.icon.icon--small.icon-facebook-official 
+                                        button      
+                                            span.icon.icon--small.icon-linkedin-squared   
+                                        button
+                                            span.icon.icon--small.icon-twitter
+                    .grid-3.grid-2--m
+                        .product__card
+                            .card-header
+                                a(href="/")
+                                    img(src="/assets/imgs/medals.png" alt="notebook" title="notebooks")
+                            .card-footer
+                                .product__info
+                                    a.product__link(href="#")
+                                        h3.product__title Calendar
+                                    .product__actions
+                                        button
+                                            span.icon.icon--small.icon-facebook-official 
+                                        button      
+                                            span.icon.icon--small.icon-linkedin-squared   
+                                        button
+                                            span.icon.icon--small.icon-twitter

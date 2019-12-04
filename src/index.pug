@@ -1,6 +1,14 @@
 extends ./layouts/main.pug
 block head
     link(rel="stylesheet", href="./css/swiper.min.css")
+    script(type='application/ld+json').
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "http://www.basuragency.com",
+        "logo": "http://www.basuragency.com/assets/imgs/basur-agency-logo.png"
+        }
+
 block body
     header.header
         // Slider main container

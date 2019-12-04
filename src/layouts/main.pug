@@ -81,18 +81,19 @@ html(lang="en")
             .outer
                 .inner
                     .nav
-                        //.brand-logo
-                            //img.nav-logo(alt="basur agency logo", src="./assets/imgs/basur-agency-logo.png")
+                        .brand-logo.mobile-logo
+                            img.nav-logo(alt="basur agency logo", src="./assets/imgs/basur-agency-logo.png", width="96")
                         
                         ul.navbar#main-navbar
                             li.navbar__item
-                                a.navbar__link(href="#") Home     
+                                a.navbar__link(href="#") Home      
                             li.navbar__item.has--dropdown
                                 a.navbar__link(href="#") Promotions
                                     span.icon.icon--small.icon-down-open-1
                                 .nav-mega 
                                     .nav-mega__item    
-                                        span.mega__title Menu asdasd
+                                        a(href="/")
+                                            span.mega__title Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
@@ -103,8 +104,9 @@ html(lang="en")
                                                 a(href="#") sub cat 2
                                             li
                                                 a(href="#") sub cat 3
-                                    .nav-mega__item    
-                                        span.mega__title Menu asdasd
+                                    .nav-mega__item
+                                        a(href="/")    
+                                            span.mega__title Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")

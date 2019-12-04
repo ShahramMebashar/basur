@@ -61,6 +61,8 @@
         max-width: 96px
         flex: 1
         vertical-align: middle
+    .mobile-logo
+        display: block
     .nav-humberger
         width: 32px
         padding: 4px
@@ -89,12 +91,13 @@
         position: fixed
         top: 72px
         left: 0
-        width: 100%
+        width: 80%
         height: 100%
         background: #fff
         z-index: 9999
         transform: translate(-100%)
         transition: transform .3s ease
+        border-right: 1px solid $border-color
         .navbar__item
             text-transform: uppercase
             .nav-dropdown,.nav-mega
@@ -111,7 +114,7 @@
             .nav-dropdown
                 display: block
             .nav-mega
-                display: flex
+                display: block
             .icon
                 transform: rotate(180deg) translateX(-4px)
 
@@ -131,17 +134,16 @@
 .navbar__link,.nav-dropdown-link
     text-decoration: none
     display: block
-    padding: 1.5rem 0
+    padding: 24px 0
     color: #212121
-.navbar__item:not(:first-child), .nav-dropdown-item
-    border-top: 1px solid #f0f0f0
+
 .nav-searchbar
     display: none
     &:hover
         color: $primary-color
         cursor: pointer
 
-@media screen and (min-width: 960px)
+@media screen and (min-width: $br--d)
     .top-nav
         padding-top: 40px
         padding-bottom: 40px
@@ -170,6 +172,7 @@
             align-items: center
             background: none
             padding: 0
+            border: none
             .navbar__item
                 padding-left: 8px
                 padding-right: 8px
@@ -180,7 +183,11 @@
                 padding: 2rem 1.5rem
             .navbar__link:first-child
                 margin-left: -1.5rem
-
+            .navbar__item.is-active
+                .nav-mega
+                    display: flex
+        .mobile-logo
+            display: none
         .nav-humberger
             display: none
 
@@ -208,6 +215,7 @@
                 background: #fff
                 width: 300px
                 box-shadow: 0 2px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.09)
+                margin-top: 8px
             .nav-mega
                 display: flex
                 flex-direction: row
@@ -246,6 +254,22 @@
                     padding: 0
                     font-weight: 300
                     color: #666
+                    font-size: 14px
 
     .nav-searchbar
         display: block
+
+@media screen and (max-width: $br--t)
+    .nav .navbar
+        overflow-y: scroll
+        .nav-mega
+            padding: 4px
+
+            .nav__sub-item
+                display: none
+            .nav-mega__item
+                padding: 8px 16px
+                font-size: 14px
+
+    .mega__thumbnail
+        display: none

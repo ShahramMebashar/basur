@@ -1,7 +1,8 @@
 @media screen and (min-width: $br--d)
     .m--show,
     .t--show,
-    .d--hide
+    .d--hide,
+    .is--mobile
         display: none
 
     .d--show
@@ -10,7 +11,8 @@
 @media screen and (max-width: $br--t)
     .m--show,
     .t--hide,
-    .d--show
+    .d--show,
+    .is--mobile
         display: none
 
     .t--show
@@ -23,5 +25,6 @@
     .d--show
         display: none
 
-    .m--show
+    .m--show,
+    .is--mobile
         display: block

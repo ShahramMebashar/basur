@@ -1,0 +1,121 @@
+.header.single__page
+    position: relative
+    display: flex
+    align-content: center
+    justify-content: center
+    align-items: center
+    height: 128px
+    background: #f0f0f0
+    margin-bottom: 56px
+    background: url('../assets/imgs/single-header-bg.jpg') no-repeat center center
+    background-size: cover
+    &::before
+        content: " "
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: darken($primary-color, 30%)
+        opacity: 0.95
+
+.breadcrumb
+    position: relative
+    list-style: none
+    margin: 0 auto
+    padding: 0
+    display: inline-block
+    z-index: 1
+    color: #fff
+    > li
+        display: inline-block
+        margin-right: 0px
+        font-size: 14px
+        & + li
+            margin-left: 0px
+        a
+            color: #ffffff
+            &:hover
+                color: $primary-color
+
+.main-content
+    margin-bottom: 56px
+.single-product
+    .product__actions
+        margin-bottom: 24px
+.product__thumbnail
+    border: 1px solid $border-color
+    padding: 4px
+    overflow: hidden
+    margin-bottom: 24px
+    img
+        transition: .3s ease
+        &:hover
+            transform: scale(1.2)
+
+.product__meta
+    margin-bottom: 16px
+    .meta__code
+        background: #f6f6f6
+        padding: 0 8px
+.product__actions
+    .title
+        margin-bottom: 16px
+    .btn + .btn
+        margin-left: 8px
+    .btn
+        padding-left: 12px
+        padding-right: 12px
+        .icon
+            margin-right: 8px
+    .btn--whatsapp
+        background: $color--whatsapp !important
+        border: none
+        &:hover
+            background: lighten($color--whatsapp, 10%) !important
+.social-link
+    display: inline-block
+    color: #111
+    margin-top: 16px
+    &:hover
+        color: $primary-color
+    &:first-child
+        margin-left: 16px
+
+.recomended-products
+    background: #fafafa
+    .product__card
+        .card-header
+            overflow: hidden
+            img
+                box-shadow: 0 2px 3px rgba(100,100,100,0.06) ,0 8px 24px rgba(100,100,100,0.09)
+                transition: transform .3s ease
+                &:hover
+                    transform: scale(1.2)
+        .card-footer
+            padding: 8px 0
+    .product__name
+        margin-bottom: 0
+.recomend-grid
+    display: flex
+    flex-wrap: wrap
+    .product__thumbnail
+        margin-bottom: 8px
+
+@media screen and (min-width: $br--d)
+    .header.single__page
+        height: 240px
+    .breadcrumb
+        > li
+            margin-right: 8px
+            font-size: 16px
+            & + li
+                margin-left: 8px
+
+    .single-product
+        display: flex
+    .product__thumbnail
+        margin-bottom: 0
+    .product__actions
+        .btn + .btn
+            margin-left: 16px
