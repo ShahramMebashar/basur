@@ -257,6 +257,16 @@
                         font-weight: 300
                         color: #666
                         font-size: 14px
+    .nav-mega__item + .nav-mega__item
+        border-left: 1px solid #eee
+
+    .nav-mega__item:nth-child(5n)
+        border-left: none
+    .nav-mega__item:nth-child(1n + 5)
+        border-bottom: none
+
+    .nav-mega__item
+        border-bottom: 1px solid #eee
 
     .nav-searchbar
         display: block
