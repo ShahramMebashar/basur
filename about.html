@@ -14,6 +14,38 @@
 <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
 <meta property="og:url" content="http://euro-travel-example.com/index.htm">
     <title>Modern tools Boilerplate</title>
+    <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://www.basuragency.com",
+      "logo": "http://www.basuragency.com/assets/imgs/basur-agency-logo.png"
+      }
+    </script>
+    <style>
+      .about-container {
+          padding: 16px 0px;
+          margin-top: 32px
+      } 
+      .about-headline {
+          margin-bottom: 16px !important;
+      }
+      .triple-cards {
+          margin-top: 56px;
+          margin-bottom: 56px;
+      }
+      @media screen and (min-width: 640px) {
+          .about-container {
+              display: flex;
+              flex-wrap: wrap;
+          }
+          .about-grid {
+              flex: 1 1 50%;
+              padding: 8px 32px;
+          }
+      
+      }       
+    </style>
     <link rel="stylesheet" href="/css/main.min.css"/>
     <link rel="stylesheet" href="/css/fontello.css"/><!--[if IE gte 8]>
     <link rel="stylesheet" href="/css/fontello-ie7.css"/><![endif]-->
@@ -205,112 +237,60 @@
             <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://example.com/books"><span property="name">Home</span></a>
               <meta property="position" content="1"/>
             </li>  ›
-            <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://example.com/books/sciencefiction"><span property="name">Promotions</span></a>
-              <meta property="position" content="2"/>
-            </li>  ›
-            <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://example.com/books/sciencefiction/awardwinners"><span property="name">Business card</span></a>
+            <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://example.com/books/sciencefiction/awardwinners"><span property="name">About</span></a>
               <meta property="position" content="3"/>
             </li>
           </ol>
         </div>
       </div>
     </header>
-    <main class="main-content">
+    <main class="contact-us">
       <div class="outer">
         <div class="inner">
-          <article class="single-product">
-            <div class="grid-6">
-              <div class="product__thumbnail"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></div>
+          <h1 class="section__headline">About us</h1>
+          <p class="section__subheadline">Full Service Graphic Design, Printing.</p>
+          <div class="triple-cards">
+            <div class="card">
+              <h2 class="card-headline">Our Vision</h2>
+              <p class="card-body">Our vision is to be recognized as the standard of superior service in the printing and graphic design world. We are constantly working on bringing results that matter in everything we do and we are determined for successful outcomes in every facet of our business.</p>
             </div>
-            <div class="grid-6">
-              <div class="product__details">
-                <div class="product__name">
-                  <h1 class="h5">Notebooks</h1>
-                </div>
-                <div class="product__meta"><strong>Product code </strong><span class="meta__code">BA-1065</span></div>
-                <div class="product__description">
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </div>
-                <div class="product__actions">
-                  <h4 class="h6 title">Buy now</h4><a class="btn btn--primary btn--whatsapp" href="whatsapp.com"> <span class="icon icon--small icon-whatsapp"> </span>With Whatsapp</a><a class="btn" href="mailto:info@basuragency.com?subject={url}"><span class="icon icon--small icon-mail">   </span>With E-Mail</a>
-                </div>
-                <div class="h-divider"></div>
-                <div class="product__socials"><strong>Share: </strong><a class="social-link" href="/facebook"> <span class="icon icon--small icon-facebook-official"> </span></a><a class="social-link" href="/instagram"> <span class="icon icon--small icon-twitter"> </span></a><a class="social-link" href="/instagram"> <span class="icon icon--small icon-linkedin-squared"> </span></a></div>
-              </div>
+            <div class="card">
+              <h2 class="card-headline">Our Mission</h2>
+              <p class="card-body">Our Mission is to be able to provide our clients with the highest expectation an innovate new ideas to every printing and design job they have, at the same time provide our clients with the best customer service and the highest quality products to ensure a long lasting relationship. Consider us part of you team when it comes to all your printing needs.</p>
             </div>
-          </article>
-        </div>
-      </div>
-    </main>
-    <section class="section recomended-products">
-      <div class="outer">
-        <div class="inner">
-          <h3 class="h4">You may also like this</h3>
-          <div class="recomend-grid products">
-            <div class="grid-3 grid-2--m">
-              <div class="product__card">
-                <div class="card-header"><a href="/"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></a></div>
-                <div class="card-footer">
-                  <div class="product__info"><a class="product__link" href="#">
-                      <h3 class="product__title">Calendar</h3></a>
-                    <div class="product__actions">
-                      <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                      <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                      <button><span class="icon icon--small icon-twitter">    </span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="card">
+              <h2 class="card-headline">Our Promise</h2>
+              <p class="card-body">Our promise is to create comprehensive and unique products for each client.  We understand your time is valuable and will work with you to ensure that your business needs are met.  Your happiness is our success!</p>
             </div>
-            <div class="grid-3 grid-2--m">
-              <div class="product__card">
-                <div class="card-header"><a href="/"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></a></div>
-                <div class="card-footer">
-                  <div class="product__info"><a class="product__link" href="#">
-                      <h3 class="product__title">Calendar</h3></a>
-                    <div class="product__actions">
-                      <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                      <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                      <button><span class="icon icon--small icon-twitter">    </span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="h-divider"></div>
+          <div class="about-container">
+            <div class="about-grid">
+              <h2 class="h4 about-headline">We love what we do</h2>
+              <p>We put our heart into all of our projects. You & your brand will see & feel it in everything we deliver. Let us help you shine. You will see and feel the difference.</p>
             </div>
-            <div class="grid-3 grid-2--m">
-              <div class="product__card">
-                <div class="card-header"><a href="/"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></a></div>
-                <div class="card-footer">
-                  <div class="product__info"><a class="product__link" href="#">
-                      <h3 class="product__title">Calendar</h3></a>
-                    <div class="product__actions">
-                      <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                      <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                      <button><span class="icon icon--small icon-twitter"></span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="about-grid">
+              <h2 class="h4 about-headline">Tasteful Creativity</h2>
+              <p>Let our creative marketing & graphic design team help you fill in all the blanks creatively. If you need a little creative mojo we know how to get you where you need to be.</p>
             </div>
-            <div class="grid-3 grid-2--m">
-              <div class="product__card">
-                <div class="card-header"><a href="/"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></a></div>
-                <div class="card-footer">
-                  <div class="product__info"><a class="product__link" href="#">
-                      <h3 class="product__title">Calendar</h3></a>
-                    <div class="product__actions">
-                      <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                      <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                      <button><span class="icon icon--small icon-twitter"></span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="about-grid">
+              <h2 class="h4 about-headline">Controlled Branding</h2>
+              <p>We will help you get your brand out there by reinforcing proven methods of marketing & branding strategies. Let us help you build your brand. See the results.</p>
+            </div>
+            <div class="about-grid">
+              <h2 class="h4 about-headline">Effective Marketing</h2>
+              <p>Give us a call. Lets set up a time to speak directly to all involved parties and get started on helping you build your business and your brand.</p>
+            </div>
+            <div class="about-grid">
+              <h2 class="h4 about-headline">Who Do We Design For?</h2>
+              <p>Whether you own a business-to-business or business-to-consumer company, we can assist you with your graphic design needs. We have experience with a range of businesses and we know which approaches work best for each industry. This saves you valuable time because we’re not experimenting with your brand — we already know what ideas are worth pursuing.</p>
+              <p>We’re proud of the diversity of our clients and how well-attuned we’ve become to their branding and graphic design needs.</p>
+              <p>Are you ready to take your business to the next level with a more unified brand identity? Contact Basur Agency.</p><a class="btn btn--outline btn--primary" href="/contact" title="contact us">Contact us              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </main>
     <footer class="footer">
       <div class="outer">
         <div class="inner">

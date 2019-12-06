@@ -4,6 +4,20 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="description" content="{{pageDescription}}")
+
+        <!-- Twitter meta tags -->
+        meta(name='twitter:title', content='{{pageTitle}}')
+        meta(name='twitter:description', content='{{description}}')
+        meta(name='twitter:image', content=' http://euro-travel-example.com/thumbnail.jpg')
+        meta(name='twitter:card', content='summary_large_image')
+        <!-- Facebook meta tags -->
+        <meta property="og:title" content="European Travel Destinations">
+        <meta property="og:description" content="Offering tour packages for individuals or groups.">
+        <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+        <meta property="og:url" content="http://euro-travel-example.com/index.htm">
+
+
         title Modern tools Boilerplate
         block head
         link(rel="stylesheet", href="/css/main.min.css")
@@ -11,6 +25,9 @@ html(lang="en")
         <!--[if IE gte 8]>
         link(rel="stylesheet", href="/css/fontello-ie7.css")
         <![endif]-->
+        link(rel="shortcut icon", href="/assets/imgs/favicon.ico", type="image/x-icon")
+        link(rel="apple-touch-icon", href="/assets/imgs/favicon.png")
+
     body
         .outer
             .inner
@@ -74,9 +91,8 @@ html(lang="en")
 
                             .social-icons
                                 span.icon.icon--medium.icon-facebook-official   
-                                span.icon.icon--medium.icon-linkedin-squared   
-                                span.icon.icon--medium.icon-twitter   
-                                span.icon.icon--medium.icon-youtube   
+                                span.icon.icon--medium.icon-instagram   
+                                span.icon.icon--medium.icon-twitter-squared      
         nav.main-nav
             .outer
                 .inner
@@ -92,8 +108,8 @@ html(lang="en")
                                     span.icon.icon--small.icon-down-open-1
                                 .nav-mega 
                                     .nav-mega__item    
-                                        a(href="/")
-                                            span.mega__title Menu asdasd
+                                        h4.mega__title
+                                            a(href="/") Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
@@ -105,8 +121,8 @@ html(lang="en")
                                             li
                                                 a(href="#") sub cat 3
                                     .nav-mega__item
-                                        a(href="/")    
-                                            span.mega__title Menu asdasd
+                                        h4.mega__title
+                                            a(href="/") Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
@@ -118,12 +134,14 @@ html(lang="en")
                                             li
                                                 a(href="#") sub cat 3
                                     .nav-mega__item    
-                                        span.mega__title Menu asdasd
+                                        h4.mega__title
+                                            a(href="/") Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
                                     .nav-mega__item    
-                                        span.mega__title Menu asdasd
+                                        h4.mega__title
+                                            a(href="/") Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
@@ -135,7 +153,8 @@ html(lang="en")
                                             li
                                                 a(href="#") sub cat 3
                                     .nav-mega__item    
-                                        span.mega__title Menu asdasd
+                                        h4.mega__title
+                                            a(href="/") Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
@@ -145,7 +164,8 @@ html(lang="en")
                                             li    
                                                 a(href="#") sub cat 2
                                     .nav-mega__item    
-                                        span.mega__title Menu asdasd
+                                        h4.mega__title
+                                            a(href="/") Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
@@ -153,12 +173,14 @@ html(lang="en")
                                             li
                                                 a(href="#") sub cat 1
                                     .nav-mega__item    
-                                        span.mega__title Menu asdasd
+                                        h4.mega__title
+                                            a(href="/") Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
                                     .nav-mega__item    
-                                        span.mega__title Menu asdasd
+                                        h4.mega__title
+                                            a(href="/") Menu asdasd
                                         a.nav-mega__link(href="#") 
                                             .mega__thumbnail
                                                 img(src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3172&q=80", alt="")
@@ -208,47 +230,45 @@ html(lang="en")
         footer.footer
             .outer
                 .inner
-                    .footer__widgets
-                        .grid-6.widget__grid
-                            .widget__about
-                                img.footer__logo(src="/assets/imgs/basur-agency-logo.png", alt="")
-                                p Our in-house professional design team will bring your brand to life. We have extensive experience designing all types of marketing materials. 
-                                ul.social-links-list
-                                    li
-                                        a(href="facebook.com/" title="our facebook page" rel="external")
-                                            .icon.icon--small.icon-facebook-official
-                                    li
-                                        a(href="instagram.com/" title="our instagram page" rel="external")
-                                            .icon.icon--small.icon-instagram
-                                    li
-                                        a(href="twitter.com/" title="our twitter page" rel="external")
-                                            .icon.icon--small.icon-twitter
-                                    li
-                                        a(href="linkedin.com/" title="our linkedin page" rel="external")
-                                            .icon.icon--small.icon-linkedin-squared
+                    nav.footer-nav
+                        .nav-left
+                            .nav-item
+                                a.nav-link(href="#") Home 
+                            .nav-item
+                                a.nav-link(href="#") Promotions 
+                            .nav-item
+                                a.nav-link(href="#") Contact 
+                            .nav-item
+                                a.nav-link(href="#") About 
 
-                        .grid-3.widget__grid
-                            p
-                                strong About
-                                div
-                                    a(href="/") Promotions
-                                    br/
-                                    a(href="/") Contact
-                                    br/
-                                    a(href="/") About
-                        .grid-3.widget__grid
-                            p
-                                strong Get in touch
-                                    address
-                                        span Duhok, asdasd , asdsd
-                                        br/
-                                        span +964750 8853530
-                                        br/
-                                        span info@basuragency.com
-                                        br/
-                                        span Sat - Thu: 8am - 7pm
+                        .nav-center
+                            img.footer__logo(src="/assets/imgs/basur-agency-logo.png", alt="")
+                        .nav-right.social-nav-links
+                            .nav-item
+                                a(href="facebook.com/" title="our facebook page" rel="nofollow")
+                                    .icon.icon--medium.icon-facebook-official
+                            .nav-item
+                                a(href="instagram.com/" title="our instagram page" rel="nofollow")
+                                    .icon.icon--medium.icon-instagram
+                            .nav-item
+                                a(href="whatsapp.com/" title="whatsapp chat" rel="nofollow")
+                                    .icon.icon--medium.icon-whatsapp
+                                    
+                .copyright-text
+                    small Copyright © 2019 Basur Agency, All Rights Reserved.
+                                
 
 
-            
+                        
+                                    
+
+
+        .basur-alo-phone
+            a.hotlinemp(href='https://wa.me/9647508853530?text=Hello from website', rel='nofollow')
+                .animated.infinite.zoomIn.basur-alo-ph-circle
+                .animated.infinite.pulse.basur-alo-ph-circle-fill
+                .animated.infinite.tada.basur-alo-ph-img-circle
+
+
         script(src="/js/main.min.js")
         block scripts    

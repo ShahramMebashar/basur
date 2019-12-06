@@ -1,0 +1,86 @@
+extends ./layouts/main.pug
+block head
+    script(type='application/ld+json').
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "http://www.basuragency.com",
+        "logo": "http://www.basuragency.com/assets/imgs/basur-agency-logo.png"
+        }
+    style.
+        .about-container {
+            padding: 16px 0px;
+            margin-top: 32px
+        } 
+        .about-headline {
+            margin-bottom: 16px !important;
+        }
+        .triple-cards {
+            margin-top: 56px;
+            margin-bottom: 56px;
+        }
+        @media screen and (min-width: 640px) {
+            .about-container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .about-grid {
+                flex: 1 1 50%;
+                padding: 8px 32px;
+            }
+
+        }       
+block body
+    header.header.single__page
+        .outer
+            .outer
+                ol.breadcrumb(vocab='https://schema.org/', typeof='BreadcrumbList')
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books')
+                            span(property='name') Home
+                        meta(property='position', content='1')
+                    |   ›
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books/sciencefiction/awardwinners')
+                            span(property='name') About
+                        meta(property='position', content='3')
+    main.contact-us
+        .outer
+            .inner
+                h1.section__headline About us
+                p.section__subheadline Full Service Graphic Design, Printing.
+                .triple-cards
+                    .card
+                        h2.card-headline Our Vision
+                        p.card-body Our vision is to be recognized as the standard of superior service in the printing and graphic design world. We are constantly working on bringing results that matter in everything we do and we are determined for successful outcomes in every facet of our business.
+                    .card
+                        h2.card-headline Our Mission
+                        p.card-body Our Mission is to be able to provide our clients with the highest expectation an innovate new ideas to every printing and design job they have, at the same time provide our clients with the best customer service and the highest quality products to ensure a long lasting relationship. Consider us part of you team when it comes to all your printing needs.
+                    .card
+                        h2.card-headline Our Promise
+                        p.card-body Our promise is to create comprehensive and unique products for each client.  We understand your time is valuable and will work with you to ensure that your business needs are met.  Your happiness is our success!
+
+                .h-divider
+                .about-container
+                    div.about-grid
+                        h2.h4.about-headline We love what we do
+                        p We put our heart into all of our projects. You & your brand will see & feel it in everything we deliver. Let us help you shine. You will see and feel the difference.
+                    div.about-grid
+                        h2.h4.about-headline Tasteful Creativity
+                        p Let our creative marketing & graphic design team help you fill in all the blanks creatively. If you need a little creative mojo we know how to get you where you need to be.
+                    div.about-grid
+                        h2.h4.about-headline Controlled Branding
+                        p We will help you get your brand out there by reinforcing proven methods of marketing & branding strategies. Let us help you build your brand. See the results.
+                    div.about-grid
+                        h2.h4.about-headline Effective Marketing
+                        p Give us a call. Lets set up a time to speak directly to all involved parties and get started on helping you build your business and your brand.
+                    
+                    div.about-grid
+                        h2.h4.about-headline Who Do We Design For?
+                        p Whether you own a business-to-business or business-to-consumer company, we can assist you with your graphic design needs. We have experience with a range of businesses and we know which approaches work best for each industry. This saves you valuable time because we’re not experimenting with your brand — we already know what ideas are worth pursuing.
+
+                        p We’re proud of the diversity of our clients and how well-attuned we’ve become to their branding and graphic design needs.
+
+                        p Are you ready to take your business to the next level with a more unified brand identity? Contact Basur Agency.
+
+                        a.btn.btn--outline.btn--primary(href="/contact" title="contact us") Contact us              

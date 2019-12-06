@@ -1,6 +1,9 @@
 .nav__widget
     display: flex
-
+    .social-icons
+        .icon + .icon
+            display: inline-block
+            margin-left: 16px
 .searchbar
     margin-right: 32px
     flex: 1 1 auto
@@ -11,6 +14,7 @@
     display: inline-block
     border-radius: 25px
     width: 100%
+    transition: border-color .3s ease
 
 .btn--search
     width: 48px

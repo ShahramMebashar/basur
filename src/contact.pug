@@ -1,0 +1,81 @@
+extends ./layouts/main.pug
+block head
+    script(type='application/ld+json').
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "http://www.basuragency.com",
+        "logo": "http://www.basuragency.com/assets/imgs/basur-agency-logo.png"
+        }
+block body
+    header.header.single__page
+        .outer
+            .outer
+                ol.breadcrumb(vocab='https://schema.org/', typeof='BreadcrumbList')
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books')
+                            span(property='name') Home
+                        meta(property='position', content='1')
+                    |   ›
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books/sciencefiction/awardwinners')
+                            span(property='name') Contact
+                        meta(property='position', content='3')
+    main.contact-us
+        .outer
+            .inner
+                .grids
+                    .grid-6.contact-info
+                        h2.h5 Get in touch
+                        p We would love to hear from you, please contact us via phone, email or social media.
+                        
+                        .office-details
+                            .office-detail__item
+                                span.icon.icon--small.primary-color.icon-location
+                                span ST 212, Duhok, Kurdistan
+                            .office-detail__item
+                                span.icon.icon--small.primary-color.icon-mail
+                                span info@basuragency.com
+                            .office-detail__item
+                                span.icon.icon--small.primary-color.icon-phone
+                                span +964 750 4595865 
+                            .office-detail__item
+                                span.icon.icon--small.primary-color.icon-clock
+                                span Sun - Thu:9am - 5pm
+                            
+
+                    .grid-6.contact-form-container
+                        h2.h5 Send Message
+                        form.contact-form
+                            .field.field-group
+                                .grid-half.field
+                                    .input__label
+                                        label(for="name") Name
+                                            span.required-field *
+                                    input.input(type="text", name="name", id="name")    
+                                .grid-half.field
+                                    .input__label
+                                        label(for="email") Email
+                                            span.required-field *
+                                    input.input(type="email", name="email", id="email")
+                            .field
+                                .input__label
+                                    label(for="subject") Subject
+                                input.input(type="text", name="subject", id="subject") 
+                            .field
+                                .input__label
+                                    label(for="message") Message
+                                textarea.textarea(name="message"  id="message" cols="40" rows="5") 
+                            .field
+                                button.btn.btn--primary(type="submit") Send
+
+
+        .responsive-iframe
+            iframe(class="lazy" data-src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4124.688815569592!2d42.962814641487036!3d36.86501984489158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40088cec624a8eb5%3A0xd93380a39a2fd170!2sDuhok%20Mall!5e0!3m2!1sen!2siq!4v1575615032262!5m2!1sen!2siq', width='600', height='450', frameborder='0', style='border:0;', allowfullscreen='')
+            
+block scripts
+    script(src="./js/lazyload.min.js")  
+    script.
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy"
+        });                        

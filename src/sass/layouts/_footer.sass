@@ -1,22 +1,44 @@
 .footer
-    background: #111
-    color: lighten(#000, 40%)
-    padding-top: 72px
-    padding-bottom: 72px
+    border-top: 1px solid  $border-color
+    background: #fff
+    color: lighten(#000, 10%)
+    padding-top: 56px
+    padding-bottom: 16px
     &__logo
-        max-width: 175px
-    .widget__grid
-        //background: #151515
-        padding: 8px
-    .social-links-list
-        list-style: none
-        padding: 0
-        margin: 0
-        > li
-            display: inline-block
-    @media screen and (min-width: $br--d)
-        &__widgets
-            display: flex
+        max-width: 128px
+.footer-nav
+    display: flex
+    flex-direction: column
+    text-align: center
+    .nav-left
+        margin-bottom: 16px
+    .nav-center
+        margin-bottom: 16px
+    .social-nav-links
+        margin-top: 16px
 
-        .widget__grid:not(:last-child)
-            padding-right: 24px
+    .nav-item
+        display: inline-block
+        align-self: center
+        & + .nav-item
+            margin-left: 16px
+.copyright-text
+    text-align: center
+    margin-top: 18px
+    padding-top: 4px
+    margin-bottom: 0
+@media screen and (min-width: $br--t)
+
+    .footer-nav
+        flex-direction: row
+        align-items: center
+
+        .social-nav-links
+            margin-top: 0
+        .nav-left
+            margin-right: auto
+            margin-bottom: 0
+        .nav-right
+            margin-left: auto
+        .nav-center
+            margin-bottom: 0

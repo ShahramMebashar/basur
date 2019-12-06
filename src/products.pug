@@ -1,0 +1,182 @@
+extends ./layouts/main.pug
+
+block body
+    header.header.single__page
+        .outer
+            .outer
+                ol.breadcrumb(vocab='https://schema.org/', typeof='BreadcrumbList')
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books')
+                            span(property='name') Home
+                        meta(property='position', content='1')
+                    |   ›
+                    li(property='itemListElement', typeof='ListItem')
+                        a(property='item', typeof='WebPage', href='https://example.com/books/sciencefiction')
+                            span(property='name') Promotions
+                        meta(property='position', content='2')
+
+    main.main-content
+        .outer
+            .inner
+                h2.section__headline Logo
+                .section__subheadline Promotions
+                .products
+                    .promotions__grid
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/bags.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-whatsapp
+                                    button.action.action-has--icon      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/medals.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-whatsapp
+                                    button.action.action-has--icon      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/pins.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-whatsapp 
+                                    button.action.action-has--icon      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/cloths.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button.action.action-has--icon      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/clocks.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button.action.action-has--icon      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/notebook.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button.action.action-has--icon      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button.action.action-has--icon
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/bags.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button.action-has--icon
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button.action-has--icon      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button.action-has--icon
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/medals.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button.action-has--icon
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button.action-has--icon      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button.action-has--icon
+                                        span.icon.icon--small.icon-twitter 
+                        .product
+                            a.product__thumbnail(href="#")
+                                img.lazy(data-src="/assets/imgs/pins.png", alt="")
+                            .product__info
+                                a.product__link(href="#")
+                                    h3.product__title Calendar
+                                .product__actions
+                                    button
+                                        span.icon.icon--small.icon-facebook-official 
+                                    button      
+                                        span.icon.icon--small.icon-linkedin-squared   
+                                    button
+                                        span.icon.icon--small.icon-twitter 
+                        
+                .pagination
+                    ul.pages
+                        li.page__item
+                            a.page__link.page--active(href="?page=0")  First page  
+                        li.page__item
+                            a.page__link.page--active(href="?page=0")  1  
+                        li.page__item
+                            a.page__link(href="?page=0")  2  
+                        li.page__item
+                            a.page__link(href="?page=0")  3  
+                        li.page__item
+                            a.page__link(href="?page=0")  4  
+                        li.page__item
+                            a.page__link(href="?page=0")  5 
+                        li.page__item
+                            a.page__link(href="?page=0")  4  
+                        li.page__item
+                            a.page__link(href="?page=0")  5 
+                        li.page__item
+                            a.page__link(href="?page=0")  4  
+                        li.page__item
+                            a.page__link(href="?page=0")  5 
+                        li.page__item
+                            a.page__link(href="?page=0")  4  
+                        li.page__item
+                            a.page__link(href="?page=0")  5 
+                        li.page__item
+                            a.page__link(href="?page=0")  4  
+                        li.page__item
+                            a.page__link(href="?page=0")  5
+                        li.page__item
+                            a.page__link.page--active(href="?page=0")  Last page     
+
+block scripts
+    script(src="./js/lazyload.min.js")
+    script.
+        var lazyLoadInstance = new LazyLoad({
+                elements_selector: ".lazy"
+            });                          
+            

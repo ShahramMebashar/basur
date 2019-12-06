@@ -222,6 +222,7 @@
                 flex-wrap: wrap
                 position: absolute
                 justify-content: flex-start
+                align-items: stretch
                 top: 100%
                 left: 0
                 background: #fff
@@ -232,7 +233,7 @@
                 &__item
                     flex: 0 0 25%
                     padding: 16px 24px
-                    //border: 1px solid $border-color
+
                 .nav-mega__link
                     display: block
                 .mega__title
@@ -240,7 +241,7 @@
                     font-size: 16px
                     font-weight: 600
                     text-transform: uppercase
-                    border-left: 4px solid $secondary-color
+                    border-left: 4px solid $primary-color
                     padding-left: 8px
                     margin-bottom: 0
                 .mega__thumbnail
@@ -252,9 +253,10 @@
                 .nav__sub-item
                     list-style: none
                     padding: 0
-                    font-weight: 300
-                    color: #666
-                    font-size: 14px
+                    a
+                        font-weight: 300
+                        color: #666
+                        font-size: 14px
 
     .nav-searchbar
         display: block

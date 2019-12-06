@@ -14,6 +14,14 @@
 <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
 <meta property="og:url" content="http://euro-travel-example.com/index.htm">
     <title>Modern tools Boilerplate</title>
+    <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://www.basuragency.com",
+      "logo": "http://www.basuragency.com/assets/imgs/basur-agency-logo.png"
+      }
+    </script>
     <link rel="stylesheet" href="/css/main.min.css"/>
     <link rel="stylesheet" href="/css/fontello.css"/><!--[if IE gte 8]>
     <link rel="stylesheet" href="/css/fontello-ie7.css"/><![endif]-->
@@ -205,112 +213,68 @@
             <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://example.com/books"><span property="name">Home</span></a>
               <meta property="position" content="1"/>
             </li>  ›
-            <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://example.com/books/sciencefiction"><span property="name">Promotions</span></a>
-              <meta property="position" content="2"/>
-            </li>  ›
-            <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://example.com/books/sciencefiction/awardwinners"><span property="name">Business card</span></a>
+            <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://example.com/books/sciencefiction/awardwinners"><span property="name">Contact</span></a>
               <meta property="position" content="3"/>
             </li>
           </ol>
         </div>
       </div>
     </header>
-    <main class="main-content">
+    <main class="contact-us">
       <div class="outer">
         <div class="inner">
-          <article class="single-product">
-            <div class="grid-6">
-              <div class="product__thumbnail"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></div>
-            </div>
-            <div class="grid-6">
-              <div class="product__details">
-                <div class="product__name">
-                  <h1 class="h5">Notebooks</h1>
-                </div>
-                <div class="product__meta"><strong>Product code </strong><span class="meta__code">BA-1065</span></div>
-                <div class="product__description">
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </div>
-                <div class="product__actions">
-                  <h4 class="h6 title">Buy now</h4><a class="btn btn--primary btn--whatsapp" href="whatsapp.com"> <span class="icon icon--small icon-whatsapp"> </span>With Whatsapp</a><a class="btn" href="mailto:info@basuragency.com?subject={url}"><span class="icon icon--small icon-mail">   </span>With E-Mail</a>
-                </div>
-                <div class="h-divider"></div>
-                <div class="product__socials"><strong>Share: </strong><a class="social-link" href="/facebook"> <span class="icon icon--small icon-facebook-official"> </span></a><a class="social-link" href="/instagram"> <span class="icon icon--small icon-twitter"> </span></a><a class="social-link" href="/instagram"> <span class="icon icon--small icon-linkedin-squared"> </span></a></div>
+          <div class="grids">
+            <div class="grid-6 contact-info">
+              <h2 class="h5">Get in touch</h2>
+              <p>We would love to hear from you, please contact us via phone, email or social media.</p>
+              <div class="office-details">
+                <div class="office-detail__item"><span class="icon icon--small primary-color icon-location"></span><span>ST 212, Duhok, Kurdistan</span></div>
+                <div class="office-detail__item"><span class="icon icon--small primary-color icon-mail"></span><span>info@basuragency.com</span></div>
+                <div class="office-detail__item"><span class="icon icon--small primary-color icon-phone"></span><span>+964 750 4595865 </span></div>
+                <div class="office-detail__item"><span class="icon icon--small primary-color icon-clock"></span><span>Sun - Thu:9am - 5pm</span></div>
               </div>
             </div>
-          </article>
-        </div>
-      </div>
-    </main>
-    <section class="section recomended-products">
-      <div class="outer">
-        <div class="inner">
-          <h3 class="h4">You may also like this</h3>
-          <div class="recomend-grid products">
-            <div class="grid-3 grid-2--m">
-              <div class="product__card">
-                <div class="card-header"><a href="/"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></a></div>
-                <div class="card-footer">
-                  <div class="product__info"><a class="product__link" href="#">
-                      <h3 class="product__title">Calendar</h3></a>
-                    <div class="product__actions">
-                      <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                      <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                      <button><span class="icon icon--small icon-twitter">    </span></button>
+            <div class="grid-6 contact-form-container">
+              <h2 class="h5">Send Message</h2>
+              <form class="contact-form">
+                <div class="field field-group">
+                  <div class="grid-half field">
+                    <div class="input__label">
+                      <label for="name">Name<span class="required-field">*</span></label>
                     </div>
+                    <input class="input" type="text" name="name" id="name"/>
+                  </div>
+                  <div class="grid-half field">
+                    <div class="input__label">
+                      <label for="email">Email<span class="required-field">*</span></label>
+                    </div>
+                    <input class="input" type="email" name="email" id="email"/>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="grid-3 grid-2--m">
-              <div class="product__card">
-                <div class="card-header"><a href="/"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></a></div>
-                <div class="card-footer">
-                  <div class="product__info"><a class="product__link" href="#">
-                      <h3 class="product__title">Calendar</h3></a>
-                    <div class="product__actions">
-                      <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                      <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                      <button><span class="icon icon--small icon-twitter">    </span></button>
-                    </div>
+                <div class="field">
+                  <div class="input__label">
+                    <label for="subject">Subject</label>
                   </div>
+                  <input class="input" type="text" name="subject" id="subject"/>
                 </div>
-              </div>
-            </div>
-            <div class="grid-3 grid-2--m">
-              <div class="product__card">
-                <div class="card-header"><a href="/"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></a></div>
-                <div class="card-footer">
-                  <div class="product__info"><a class="product__link" href="#">
-                      <h3 class="product__title">Calendar</h3></a>
-                    <div class="product__actions">
-                      <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                      <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                      <button><span class="icon icon--small icon-twitter"></span></button>
-                    </div>
+                <div class="field">
+                  <div class="input__label">
+                    <label for="message">Message</label>
                   </div>
+                  <textarea class="textarea" name="message" id="message" cols="40" rows="5"> </textarea>
                 </div>
-              </div>
-            </div>
-            <div class="grid-3 grid-2--m">
-              <div class="product__card">
-                <div class="card-header"><a href="/"><img src="/assets/imgs/medals.png" alt="notebook" title="notebooks"/></a></div>
-                <div class="card-footer">
-                  <div class="product__info"><a class="product__link" href="#">
-                      <h3 class="product__title">Calendar</h3></a>
-                    <div class="product__actions">
-                      <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                      <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                      <button><span class="icon icon--small icon-twitter"></span></button>
-                    </div>
-                  </div>
+                <div class="field">
+                  <button class="btn btn--primary" type="submit">Send</button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="responsive-iframe">
+        <iframe class="lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4124.688815569592!2d42.962814641487036!3d36.86501984489158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40088cec624a8eb5%3A0xd93380a39a2fd170!2sDuhok%20Mall!5e0!3m2!1sen!2siq!4v1575615032262!5m2!1sen!2siq" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </main>
     <footer class="footer">
       <div class="outer">
         <div class="inner">
@@ -340,5 +304,11 @@
         <div class="animated infinite pulse basur-alo-ph-circle-fill"></div>
         <div class="animated infinite tada basur-alo-ph-img-circle"></div></a></div>
     <script src="/js/main.min.js"></script>
+    <script src="./js/lazyload.min.js"> </script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+          elements_selector: ".lazy"
+      });                        
+    </script>
   </body>
 </html>

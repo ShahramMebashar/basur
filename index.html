@@ -4,6 +4,15 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="{{pageDescription}}"/><!-- Twitter meta tags -->
+    <meta name="twitter:title" content="{{pageTitle}}"/>
+    <meta name="twitter:description" content="{{description}}"/>
+    <meta name="twitter:image" content=" http://euro-travel-example.com/thumbnail.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/><!-- Facebook meta tags -->
+<meta property="og:title" content="European Travel Destinations">
+<meta property="og:description" content="Offering tour packages for individuals or groups.">
+<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+<meta property="og:url" content="http://euro-travel-example.com/index.htm">
     <title>Modern tools Boilerplate</title>
     <link rel="stylesheet" href="./css/swiper.min.css"/>
     <script type="application/ld+json">
@@ -18,6 +27,8 @@
     <link rel="stylesheet" href="/css/main.min.css"/>
     <link rel="stylesheet" href="/css/fontello.css"/><!--[if IE gte 8]>
     <link rel="stylesheet" href="/css/fontello-ie7.css"/><![endif]-->
+    <link rel="shortcut icon" href="/assets/imgs/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="/assets/imgs/favicon.png"/>
   </head>
   <body>
     <div class="outer">
@@ -96,7 +107,7 @@
                   </div>
                 </form>
               </div>
-              <div class="social-icons"><span class="icon icon--medium icon-facebook-official">  </span><span class="icon icon--medium icon-linkedin-squared">  </span><span class="icon icon--medium icon-twitter">  </span><span class="icon icon--medium icon-youtube">  </span></div>
+              <div class="social-icons"><span class="icon icon--medium icon-facebook-official">  </span><span class="icon icon--medium icon-instagram">  </span><span class="icon icon--medium icon-twitter-squared">     </span></div>
             </div>
           </div>
         </div>
@@ -111,7 +122,8 @@
               <li class="navbar__item"><a class="navbar__link" href="#">Home      </a></li>
               <li class="navbar__item has--dropdown"><a class="navbar__link" href="#">Promotions<span class="icon icon--small icon-down-open-1"></span></a>
                 <div class="nav-mega"> 
-                  <div class="nav-mega__item">   <a href="/"><span class="mega__title">Menu asdasd</span></a><a class="nav-mega__link" href="#"> 
+                  <div class="nav-mega__item">   
+                    <h4 class="mega__title"><a href="/">Menu asdasd</a></h4><a class="nav-mega__link" href="#"> 
                       <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a>
                     <ul class="nav__sub-item">
                       <li><a href="#">sub cat 1</a></li>
@@ -119,7 +131,8 @@
                       <li><a href="#">sub cat 3</a></li>
                     </ul>
                   </div>
-                  <div class="nav-mega__item"><a href="/">   <span class="mega__title">Menu asdasd</span></a><a class="nav-mega__link" href="#"> 
+                  <div class="nav-mega__item">
+                    <h4 class="mega__title"><a href="/">Menu asdasd</a></h4><a class="nav-mega__link" href="#"> 
                       <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a>
                     <ul class="nav__sub-item">
                       <li><a href="#">sub cat 1</a></li>
@@ -127,9 +140,12 @@
                       <li><a href="#">sub cat 3</a></li>
                     </ul>
                   </div>
-                  <div class="nav-mega__item">   <span class="mega__title">Menu asdasd</span><a class="nav-mega__link" href="#"> 
-                      <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a></div>
-                  <div class="nav-mega__item">   <span class="mega__title">Menu asdasd</span><a class="nav-mega__link" href="#"> 
+                  <div class="nav-mega__item">   
+                    <h4 class="mega__title"><a href="/">Menu asdasd</a></h4><a class="nav-mega__link" href="#"> 
+                      <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a>
+                  </div>
+                  <div class="nav-mega__item">   
+                    <h4 class="mega__title"><a href="/">Menu asdasd</a></h4><a class="nav-mega__link" href="#"> 
                       <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a>
                     <ul class="nav__sub-item">
                       <li><a href="#">sub cat 1</a></li>
@@ -137,22 +153,27 @@
                       <li><a href="#">sub cat 3</a></li>
                     </ul>
                   </div>
-                  <div class="nav-mega__item">   <span class="mega__title">Menu asdasd</span><a class="nav-mega__link" href="#"> 
+                  <div class="nav-mega__item">   
+                    <h4 class="mega__title"><a href="/">Menu asdasd</a></h4><a class="nav-mega__link" href="#"> 
                       <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a>
                     <ul class="nav__sub-item">
                       <li><a href="#">sub cat 1</a></li>
                       <li>   <a href="#">sub cat 2</a></li>
                     </ul>
                   </div>
-                  <div class="nav-mega__item">   <span class="mega__title">Menu asdasd</span><a class="nav-mega__link" href="#"> 
+                  <div class="nav-mega__item">   
+                    <h4 class="mega__title"><a href="/">Menu asdasd</a></h4><a class="nav-mega__link" href="#"> 
                       <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a>
                     <ul class="nav__sub-item">
                       <li><a href="#">sub cat 1</a></li>
                     </ul>
                   </div>
-                  <div class="nav-mega__item">   <span class="mega__title">Menu asdasd</span><a class="nav-mega__link" href="#"> 
-                      <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a></div>
-                  <div class="nav-mega__item">   <span class="mega__title">Menu asdasd</span><a class="nav-mega__link" href="#"> 
+                  <div class="nav-mega__item">   
+                    <h4 class="mega__title"><a href="/">Menu asdasd</a></h4><a class="nav-mega__link" href="#"> 
+                      <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a>
+                  </div>
+                  <div class="nav-mega__item">   
+                    <h4 class="mega__title"><a href="/">Menu asdasd</a></h4><a class="nav-mega__link" href="#"> 
                       <div class="mega__thumbnail"><img src="https://images.unsplash.com/photo-1574439711502-9985ba573cab?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3172&amp;q=80" alt=""/></div></a>
                     <ul class="nav__sub-item">
                       <li><a href="#">sub cat 1</a></li>
@@ -264,7 +285,7 @@
                   </g>
                 </svg>
               </div>
-              <div class="h5 card-headline">DESIGN</div>
+              <h4 class="card-headline">DESIGN</h4>
               <p class="card-body">Attention grabbing powerful designs to communicate your message at a glance. High quality graphics at competitive prices.</p>
             </div>
             <div class="card">
@@ -288,7 +309,7 @@
                   </g>
                 </svg>
               </div>
-              <div class="h5 card-headline">PRINT</div>
+              <h4 class="card-headline">PRINT</h4>
               <p class="card-body">Business Cards, Flyers & Brochures, quality full colour digital and offset printing.​</p>
             </div>
             <div class="card">
@@ -307,7 +328,7 @@
                   </g>
                 </svg>
               </div>
-              <div class="h5 card-headline">PROMOTIONS</div>
+              <h4 class="card-headline">PROMOTIONS</h4>
               <p class="card-body">A vast array of personalised promotional gifts, covering every sector of business plus bespoke ideas to catch your eye.</p>
             </div>
           </div>
@@ -347,8 +368,8 @@
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
                     <button class="action action-has--icon"><span class="icon icon--small icon-whatsapp"></span></button>
-                    <button class="action action-has--icon">     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter"> </span></button>
+                    <button class="action action-has--icon">     <span class="icon icon--small icon-facebook-official"> </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -357,8 +378,8 @@
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
                     <button class="action action-has--icon"><span class="icon icon--small icon-whatsapp"></span></button>
-                    <button class="action action-has--icon">     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter"> </span></button>
+                    <button class="action action-has--icon">     <span class="icon icon--small icon-facebook-official">    </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -367,8 +388,8 @@
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
                     <button class="action action-has--icon"><span class="icon icon--small icon-whatsapp"> </span></button>
-                    <button class="action action-has--icon">     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter"> </span></button>
+                    <button class="action action-has--icon">     <span class="icon icon--small icon-facebook-official">    </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -376,9 +397,9 @@
                 <div class="product__info"><a class="product__link" href="#">
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
-                    <button class="action action-has--icon"><span class="icon icon--small icon-facebook-official"> </span></button>
-                    <button class="action action-has--icon">     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter"> </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-whatsapp"> </span></button>
+                    <button class="action action-has--icon">     <span class="icon icon--small icon-facebook-official">    </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -386,9 +407,9 @@
                 <div class="product__info"><a class="product__link" href="#">
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
-                    <button class="action action-has--icon"><span class="icon icon--small icon-facebook-official"> </span></button>
-                    <button class="action action-has--icon">     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter"> </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-whatsapp"></span></button>
+                    <button class="action action-has--icon">     <span class="icon icon--small icon-facebook-official">    </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -396,9 +417,9 @@
                 <div class="product__info"><a class="product__link" href="#">
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
-                    <button class="action action-has--icon"><span class="icon icon--small icon-facebook-official"> </span></button>
-                    <button class="action action-has--icon">     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter"> </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-whatsapp"></span></button>
+                    <button class="action action-has--icon">     <span class="icon icon--small icon-facebook-official">    </span></button>
+                    <button class="action action-has--icon"><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -406,9 +427,9 @@
                 <div class="product__info"><a class="product__link" href="#">
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
-                    <button class="action-has--icon"><span class="icon icon--small icon-facebook-official"> </span></button>
-                    <button class="action-has--icon">     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button class="action-has--icon"><span class="icon icon--small icon-twitter"> </span></button>
+                    <button class="action-has--icon"><span class="icon icon--small-whatsapp"> </span></button>
+                    <button class="action-has--icon">     <span class="icon icon--small icon-facebook-official"> </span></button>
+                    <button class="action-has--icon"><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -416,9 +437,9 @@
                 <div class="product__info"><a class="product__link" href="#">
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
-                    <button class="action-has--icon"><span class="icon icon--small icon-facebook-official"> </span></button>
-                    <button class="action-has--icon">     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button class="action-has--icon"><span class="icon icon--small icon-twitter"> </span></button>
+                    <button class="action-has--icon"><span class="icon icon--small icon-whatsapp"></span></button>
+                    <button class="action-has--icon">     <span class="icon icon--small icon-facebook-official">    </span></button>
+                    <button class="action-has--icon"><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -426,9 +447,9 @@
                 <div class="product__info"><a class="product__link" href="#">
                     <h3 class="product__title">Calendar</h3></a>
                   <div class="product__actions">
-                    <button><span class="icon icon--small icon-facebook-official"> </span></button>
-                    <button>     <span class="icon icon--small icon-linkedin-squared">  </span></button>
-                    <button><span class="icon icon--small icon-twitter"> </span></button>
+                    <button><span class="icon icon--small icon-whatsapp"></span></button>
+                    <button>     <span class="icon icon--small icon-facebook-official">  </span></button>
+                    <button><span class="icon icon--small icon-twitter-squared"> </span></button>
                   </div>
                 </div>
               </div>
@@ -440,43 +461,38 @@
     <section class="section services hero">
       <div class="media"><img src="/assets/imgs/wacom-design-tablet.jpg" alt=""/></div>
       <div class="description">
-        <h3>DESIGN SERVICES</h3>
+        <h2>DESIGN SERVICES</h2>
         <p>Our in-house professional design team will bring your brand to life. We have extensive experience designing all types of marketing materials. We don’t simply give you an array of designs and ask you to pick one. Our goal in the design process is to create a visual representation of your company’s personality.</p><a class="btn btn--primary" href="/contact">Contact us</a>
       </div>
     </section>
-    <!--section.section.hero-->
     <footer class="footer">
       <div class="outer">
         <div class="inner">
-          <div class="footer__widgets">
-            <div class="grid-6 widget__grid">
-              <div class="widget__about"><img class="footer__logo" src="/assets/imgs/basur-agency-logo.png" alt=""/>
-                <p>Our in-house professional design team will bring your brand to life. We have extensive experience designing all types of marketing materials. </p>
-                <ul class="social-links-list">
-                  <li><a href="facebook.com/" title="our facebook page" rel="external">
-                      <div class="icon icon--small icon-facebook-official"></div></a></li>
-                  <li><a href="instagram.com/" title="our instagram page" rel="external">
-                      <div class="icon icon--small icon-instagram"></div></a></li>
-                  <li><a href="twitter.com/" title="our twitter page" rel="external">
-                      <div class="icon icon--small icon-twitter"></div></a></li>
-                  <li><a href="linkedin.com/" title="our linkedin page" rel="external">
-                      <div class="icon icon--small icon-linkedin-squared"></div></a></li>
-                </ul>
-              </div>
+          <nav class="footer-nav">
+            <div class="nav-left">
+              <div class="nav-item"><a class="nav-link" href="#">Home </a></div>
+              <div class="nav-item"><a class="nav-link" href="#">Promotions </a></div>
+              <div class="nav-item"><a class="nav-link" href="#">Contact </a></div>
+              <div class="nav-item"><a class="nav-link" href="#">About </a></div>
             </div>
-            <div class="grid-3 widget__grid">
-              <p><strong>About</strong>
-                <div><a href="/">Promotions</a><br/><a href="/">Contact</a><br/><a href="/">About</a></div>
-              </p>
+            <div class="nav-center"><img class="footer__logo" src="/assets/imgs/basur-agency-logo.png" alt=""/></div>
+            <div class="nav-right social-nav-links">
+              <div class="nav-item"><a href="facebook.com/" title="our facebook page" rel="nofollow">
+                  <div class="icon icon--medium icon-facebook-official"></div></a></div>
+              <div class="nav-item"><a href="instagram.com/" title="our instagram page" rel="nofollow">
+                  <div class="icon icon--medium icon-instagram"></div></a></div>
+              <div class="nav-item"><a href="whatsapp.com/" title="whatsapp chat" rel="nofollow">
+                  <div class="icon icon--medium icon-whatsapp"></div></a></div>
             </div>
-            <div class="grid-3 widget__grid">
-              <p><strong>Get in touch
-                  <address><span>Duhok, asdasd , asdsd</span><br/><span>+964750 8853530</span><br/><span>info@basuragency.com</span><br/><span>Sat - Thu: 8am - 7pm</span></address></strong></p>
-            </div>
-          </div>
+          </nav>
         </div>
+        <div class="copyright-text"><small>Copyright © 2019 Basur Agency, All Rights Reserved.</small></div>
       </div>
     </footer>
+    <div class="basur-alo-phone"><a class="hotlinemp" href="https://wa.me/9647508853530?text=Hello from website" rel="nofollow">
+        <div class="animated infinite zoomIn basur-alo-ph-circle"></div>
+        <div class="animated infinite pulse basur-alo-ph-circle-fill"></div>
+        <div class="animated infinite tada basur-alo-ph-img-circle"></div></a></div>
     <script src="/js/main.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/lazyload.min.js"></script>
@@ -506,7 +522,7 @@
       })
       
       mySwiper.on('slideChange', function () {
-          console.log('slides changed');
+          
       });  
       
       var lazyLoadInstance = new LazyLoad({
