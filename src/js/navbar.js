@@ -32,6 +32,7 @@ navbar.addEvent = function() {
     }
     item.addEventListener("click", function(e) {
       e.stopPropagation();
+      e.preventDefault();
       target = e.currentTarget;
 
       //Cloase All active menu
