@@ -1,0 +1,2 @@
+https://github.com/moment/moment/blob/develop/locale/ku.js the code for this is wrong, itîs being many month waitng for a replay 
+this is sorani kurdish and it's must be ckb.js 
